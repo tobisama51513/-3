@@ -1,2 +1,148 @@
-# -3
-اخبار العاب
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أخبار الألعاب</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-image: url('https://example.com/header-image.jpg'); /* رابط لصورة الخلفية */
+            background-size: cover;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 2px -2px gray;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        nav {
+            background-color: #444;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 2px -2px gray;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .news-item {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+        .news-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .news-item h2 {
+            color: #333;
+            margin: 15px 0;
+        }
+        .news-item p {
+            color: #555;
+        }
+        .contact-form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h2 {
+            color: #333;
+        }
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>أخبار الألعاب</h1>
+</header>
+
+<nav>
+    <a href="#">الرئيسية</a>
+    <a href="#">أحدث الأخبار</a>
+    <a href="#">مراجعات الألعاب</a>
+    <a href="#">التواصل معنا</a>
+</nav>
+
+<div class="container">
+    <div class="news-item">
+        <img src="https://example.com/game1.jpg" alt="صورة لعبة XYZ">
+        <h2>إصدار جديد من لعبة XYZ</h2>
+        <p>تم الإعلان عن الإصدار الجديد من لعبة XYZ والذي يتضمن العديد من التحسينات والإضافات...</p>
+    </div>
+    <div class="news-item">
+        <img src="https://example.com/game2.jpg" alt="صورة لعبة ABC">
+        <h2>مراجعة لعبة ABC</h2>
+        <p>قمنا بتجربة لعبة ABC الجديدة وإليك مراجعتنا الشاملة حولها...</p>
+    </div>
+    <div class="news-item">
+        <img src="https://example.com/game3.jpg" alt="صورة بطولة الألعاب">
+        <h2>بطولة الألعاب الإلكترونية الشهرية</h2>
+        <p>تعرف على تفاصيل بطولة الألعاب الإلكترونية التي ستعقد هذا الشهر...</p>
+    </div>
+
+    <div class="contact-form">
+        <h2>أرسل لنا رسالة</h2>
+        <form action="/send-message" method="post">
+            <label for="name">الاسم</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">الرسالة</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
